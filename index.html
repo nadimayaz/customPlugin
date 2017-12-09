@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sample</title>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
+    <script src="service.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link href="css.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div>Customizable Products</div>
+    <ul>
+        <li><select id="clothings">  <option></option></select></li>
+        <li><select id="mugs">  <option></option></select></li>
+        <li><select id="Trophys">  <option></option></select></li>
+    </ul>
+    <div ng-app="myApp">
+        <div ng-controller="test">
+            <select id="color">
+                <option ng-repeat="color in color">{{color}}</option>
+
+            </select>
+
+            <select id="size">
+                <option ng-repeat="size in size">{{size}}</option>
+
+            </select>
+
+            <select id="design">
+                <option ng-repeat="design in design">{{design}}</option>
+
+            </select>
+        </div>
+    </div>
+</body>
+</html>
